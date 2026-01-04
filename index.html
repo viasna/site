@@ -1,40 +1,157 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tên Bạn | Portfolio</title>
+    <title>Your Name | Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-        header { background: #007bff; color: white; text-align: center; padding: 100px 20px; }
-        section { padding: 50px 20px; max-width: 800px; margin: auto; }
-        h1, h2 { text-align: center; }
-        /* Thêm CSS để đẹp hơn */
+        /* Reset and basic styling */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        /* Hero section */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-background.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            font-size: 4.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.8rem;
+            margin: 10px 0;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 50px;
+            color: #007bff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Experience & Projects list */
+        ul {
+            list-style: none;
+        }
+        li {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        li strong {
+            font-size: 1.3rem;
+            color: #007bff;
+        }
+
+        /* Alternate background */
+        section:nth-child(even) {
+            background: #e9ecef;
+        }
+
+        /* Links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #007bff;
+            color: white;
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Tên Bạn</h1>
-        <p>Empowering Your Future</p>
+        <h1>Your Name</h1>
+        <p>Digital Content Creator | ICT Trainer | Speaker</p>
+        <p>Empowering the Digital Future</p>
     </header>
-    
+
     <section id="about">
-        <h2>Giới thiệu</h2>
-        <p>Mô tả về bản thân, kinh nghiệm, kỹ năng...</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself, your background, passion, and mission. Keep it personal and engaging (2–4 sentences).</p>
+        </div>
     </section>
-    
+
     <section id="experience">
-        <h2>Kinh nghiệm làm việc</h2>
-        <ul>
-            <li>Công việc 1 - Thời gian</li>
-            <li>Công việc 2 - Thời gian</li>
-        </ul>
+        <div class="container">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Senior Role / Position</strong> — Organization (Year–Present)<br>
+                    Description of responsibilities and achievements.
+                </li>
+                <li>
+                    <strong>Another Role</strong> — Company/Organization (Year–Year)<br>
+                    Key contributions and skills used.
+                </li>
+                <!-- Add more as needed -->
+            </ul>
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2>Liên hệ</h2>
-        <p>Email: ... | Telegram: ...</p>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Selected Projects</h2>
+            <ul>
+                <li>
+                    <strong>Project Name</strong><br>
+                    Short description of the project and your role.
+                </li>
+                <li>
+                    <strong>Another Project</strong><br>
+                    Brief overview and impact.
+                </li>
+                <!-- Add more -->
+            </ul>
+        </div>
     </section>
+
+    <section id="collaborate">
+        <div class="container">
+            <h2>Let's Collaborate</h2>
+            <p>I'm open to partnerships, training sessions, speaking engagements, and consulting.</p>
+            <p>Reach out via Telegram: <a href="https://t.me/yourusername" target="_blank">@yourusername</a></p>
+            <p>Or email: <a href="mailto:your@email.com">your@email.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
-"Tạo trang đầu tiên"
