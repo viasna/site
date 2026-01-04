@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viasna PHON | Portfolio</title>
+    <title>PHON Viasna | Portfolio</title>
+    
+    <!-- Optimized Google Fonts: Noto Sans Khmer + Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/notosanskhmer/v16/3y9C6KDq1TQp7yW3H3U4F5a7Z3X4A3g4.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2" crossorigin>
     
     <style>
-        /* Reset and basic styling */
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Noto Sans Khmer', 'Roboto', Arial, sans-serif;
+            line-height: 1.7;
             color: #333;
             background: #f8f9fa;
         }
-
-        /* Hero section */
+        
         header {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://scontent.fpnh10-1.fna.fbcdn.net/v/t39.30808-6/471486541_122254209404002064_5757340287493625892_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGdVPbPwlAxfxDj6PdEISAsEnA_gLChx8kScD-AsKHHybRe-RE71nDtIvb0Ao0d_DT-aVUECZmUITALAcPMwOoG&_nc_ohc=dZ83iJ0jNPsQ7kNvwGsBuLh&_nc_oc=AdlG2j-Co1fx-5TUqKWu77JSkT5go9w_Y0bKNyxE1T7Z-8LhErEcbeydbT_53qNh4AI&_nc_zt=23&_nc_ht=scontent.fpnh10-1.fna&_nc_gid=euyFblDirmhQyFfz7ft5Hg&oh=00_Afr6nEcTsASVIT-M1aZ9ea4lfa92XIXWCCSn3yLROftajA&oe=69600848') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+                        url('https://media.gettyimages.com/id/1644788256/photo/sunrise-at-the-angkor-wat-temple-in-cambodia.jpg?s=612x612&w=gi&k=20&c=HY0oPrilvujZDO5C5OWrV87gy1P-RqiEBFedQdSxjH0=') center/cover no-repeat;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -26,134 +33,101 @@
             text-align: center;
             color: white;
         }
-        header h1 {
-            font-size: 4.5rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.8rem;
-            margin: 10px 0;
-        }
-
-        /* Sections */
-        section {
-            padding: 80px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        h2 {
-            text-align: center;
-            font-size: 2.8rem;
-            margin-bottom: 50px;
-            color: #007bff;
-        }
-        .container {
+        
+        header h1 { font-size: 5.5rem; font-weight: 700; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+        header .khmer-name { font-size: 3.8rem; font-weight: 700; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+        header p { font-size: 1.9rem; margin: 10px 0; }
+        
+        section { padding: 100px 20px; max-width: 1100px; margin: 0 auto; }
+        h2 { text-align: center; font-size: 3rem; margin-bottom: 60px; color: #D4AF37; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        
+        .container { max-width: 900px; margin: 0 auto; text-align: center; }
+        ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+        li { background: white; padding: 35px; width: 320px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: transform 0.3s; }
+        li:hover { transform: translateY(-10px); }
+        li strong { font-size: 1.5rem; color: #007bff; }
+        
+        .khmer-divider {
+            height: 90px;
+            background: url('https://img.freepik.com/free-vector/golden-ornamental-border-style_23-2148385335.jpg') center/contain no-repeat;
+            margin: 70px auto;
             max-width: 800px;
-            margin: 0 auto;
+            opacity: 0.9;
         }
-
-        /* Experience & Projects list */
-        ul {
-            list-style: none;
+        
+        section:nth-child(even) { background: #e9ecef; }
+        a { color: #007bff; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 7px solid #D4AF37;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
-        li {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        li strong {
-            font-size: 1.3rem;
-            color: #007bff;
-        }
-
-        /* Alternate background */
-        section:nth-child(even) {
-            background: #e9ecef;
-        }
-
-        /* Links */
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: #007bff;
-            color: white;
-            font-size: 1.1rem;
-        }
+        
+        footer { text-align: center; padding: 60px; background: #007bff; color: white; font-size: 1.3rem; }
     </style>
 </head>
 <body>
 
     <header>
-        <header>
         <h1>PHON Viasna</h1>
-        <p>Your Profession | Another Skill | Speaker/Trainer</p>
-        <p>Empowering Digital Cambodia (or your personal tagline)</p>
-</header>
+        <div class="khmer-name">ផន វាសនា</div>
+        <p>Digital Professional | Developer | Content Creator</p>
+        <p>Bridging Khmer Heritage with Modern Innovation</p>
     </header>
 
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Write a brief introduction about yourself, your background, passion, and mission. Keep it personal and engaging (2–4 sentences).</p>
+            <img src="https://scontent.fpnh10-1.fna.fbcdn.net/v/t39.30808-6/565159491_122324763542002064_5525290145568971354_n.png?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH574Kv9WnqeQ9hFCHtSV3AuKVcD3DwWpa4pVwPcPBalpPJTf5fIR4S275LnjS_hvkt65fgDzqxPuiJ4q35SWTy&_nc_ohc=xcmzon6wYv0Q7kNvwGMj2MM&_nc_oc=AdlOFoztfqrTh5Z0bG9CN-A7QOFmyiNPJOTwFlNwAWhGwq_YE270qiIpMRGVWYXeJoE&_nc_zt=23&_nc_ht=scontent.fpnh10-1.fna&_nc_gid=SjZBPeQYB-o99GSY7QhKgw&oh=00_AfqIjAA626V_MIX4ZGbn56Ab0yKqNB9NWn79A3ox-z2QfA&oe=695FD8C5" alt="PHON Viasna" class="profile-img">
+            <p>Hi, I'm PHON Viasna — a tech enthusiast from the heart of Cambodia. My journey started as an IT student at the Royal University of Phnom Penh, where I fell in love with coding, digital innovation, and the endless possibilities of technology.</p>
+            <p>Proud of my Khmer roots, I often draw inspiration from our ancient heritage — like the timeless beauty of Angkor — while building modern solutions for today's world. Whether developing software, creating content, or exploring new ideas, I aim to blend tradition with innovation to make a meaningful difference.</p>
+            <p>When I'm not behind a screen, you'll find me embracing Cambodian culture, connecting with people, and dreaming about how tech can empower our communities. Let's connect and create something amazing together!</p>
         </div>
+        <div class="khmer-divider"></div>
     </section>
 
     <section id="experience">
         <div class="container">
             <h2>Experience</h2>
             <ul>
-                <li>
-                    <strong>Senior Role / Position</strong> — Organization (Year–Present)<br>
-                    Description of responsibilities and achievements.
-                </li>
-                <li>
-                    <strong>Another Role</strong> — Company/Organization (Year–Year)<br>
-                    Key contributions and skills used.
-                </li>
+                <li><strong>Current Position</strong><br>Organization / Role (Year–Present)<br>Description of your work and achievements.</li>
+                <li><strong>Previous Role</strong><br>Organization (Year–Year)<br>Key responsibilities and skills gained.</li>
                 <!-- Add more as needed -->
             </ul>
         </div>
+        <div class="khmer-divider"></div>
     </section>
 
     <section id="projects">
         <div class="container">
             <h2>Selected Projects</h2>
             <ul>
-                <li>
-                    <strong>Project Name</strong><br>
-                    Short description of the project and your role.
-                </li>
-                <li>
-                    <strong>Another Project</strong><br>
-                    Brief overview and impact.
-                </li>
+                <li><strong>Project One</strong><br>Description of a project you've worked on.</li>
+                <li><strong>Project Two</strong><br>Another highlight from your portfolio.</li>
                 <!-- Add more -->
             </ul>
         </div>
+        <div class="khmer-divider"></div>
     </section>
 
     <section id="collaborate">
         <div class="container">
             <h2>Let's Collaborate</h2>
-            <p>I'm open to partnerships, training sessions, speaking engagements, and consulting.</p>
-            <p>Reach out via Telegram: <a href="https://t.me/yourusername" target="_blank">@yourusername</a></p>
-            <p>Or email: <a href="mailto:your@email.com">your@email.com</a></p>
+            <p>I'm open to new opportunities, partnerships, freelance projects, or discussions in tech and digital fields.</p>
+            <p>Telegram: <a href="https://t.me/viasna" target="_blank">@viasna</a></p>
+            <p>Email: <a href="mailto:viasna.phon@gmail.com">viasna.phon@gmail.com</a></p>
+            <p>Facebook: <a href="https://facebook.com/ViasnaPhon" target="_blank">facebook.com/ViasnaPhon</a></p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Your Name. All rights reserved.</p>
+        <p>&copy; 2026 PHON Viasna. Proudly Cambodian 🇰🇭</p>
     </footer>
 
 </body>
